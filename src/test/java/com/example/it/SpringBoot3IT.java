@@ -1,4 +1,4 @@
-package com.example;
+package com.example.it;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class SpringBoot3TestingWebCompleteApplicationTests {
+class SpringBoot3IT {
 
     @Autowired
     private MockMvc mockMvc;

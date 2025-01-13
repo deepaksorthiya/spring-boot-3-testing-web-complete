@@ -24,11 +24,50 @@ git clone https://github.com/deepaksorthiya/spring-boot-3-testing-web-complete
 cd spring-boot-3-testing-web-complete
 ```
 
-### Run All Tests
+## Run Tests
+
+### Running only Unit Tests
 
 ```bash
 ./mvnw clean test
 ```
+
+### Running Unit Tests and Integration Tests:
+
+```bash
+./mvnw clean verify
+```
+
+### Running Integration Tests but not Unit Test
+
+```bash
+./mvnw clean verify -DskipUnitTests=true
+```
+
+### Running Unit Tests but not Integration Tests:
+
+```bash
+./mvnw clean verify -DskipITs=true
+```
+
+## Other Ways
+
+### Running unit tests only (it uses maven surefire plugin)
+
+```bash
+./mvnw  compiler:testCompile resources:testResources  surefire:test
+```
+
+### Running integration tests only (it uses maven-failsafe-plugin)
+
+```bash
+./mvnw  compiler:testCompile resources:testResources  failsafe:integration-test
+```
+
+### Maven Plugins Docs
+
+* [Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/test-mojo.html#includes)
+* [Maven Failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/integration-test-mojo.html#includes)
 
 ### Reference Documentation
 

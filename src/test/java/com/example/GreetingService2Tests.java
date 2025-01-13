@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
-class GreetingServiceTest2 {
+class GreetingService2Tests {
 
 	@Autowired
 	private GreetingService greetingService;
