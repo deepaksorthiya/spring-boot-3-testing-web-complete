@@ -50,6 +50,12 @@ cd spring-boot-3-testing-web-complete
 ./mvnw clean verify -DskipITs=true
 ```
 
+### Skip Both Unit and Integration Test
+
+```bash
+./mvnw clean verify -DskipTests
+```
+
 ## Other Ways
 
 ### Running unit tests only (it uses maven surefire plugin)
