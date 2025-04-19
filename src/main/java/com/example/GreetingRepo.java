@@ -1,17 +1,20 @@
 package com.example;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.bind.DefaultValue;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 @Repository
 public class GreetingRepo {
 
-	@Value("${greet.message}")
-	private String message;
+    private final String message;
 
-	public String greet() {
-		return message;
-	}
+    public GreetingRepo(@DefaultValue("NA") @Value("${greet.message}") String message) {
+        this.message = message;
+    }
+
+    public String greet() {
+        return message;
+    }
 
 }

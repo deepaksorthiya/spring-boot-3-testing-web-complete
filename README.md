@@ -8,74 +8,80 @@
 
 # Getting Started
 
-### Requirements:
+## Requirements:
 
 ```
 Git: 2.49.0
 Spring Boot: 3.4.4
 Maven: 3.9+
-Java: 17
+Java: 21
 ```
 
-### Clone Github Repository
+## Clone Github Repository
 
 ```bash
 git clone https://github.com/deepaksorthiya/spring-boot-3-testing-web-complete
 cd spring-boot-3-testing-web-complete
 ```
 
-## Run Tests
+# Run Tests
 
-### Running only Unit Tests
+## Running only Unit Tests
 
 ```bash
 ./mvnw clean test
 ```
 
-### Running Unit Tests and Integration Tests:
+## Running Unit Tests and Integration Tests:
 
 ```bash
 ./mvnw clean verify
 ```
 
-### Running Integration Tests but not Unit Test
+## Running Integration Tests but not Unit Test
 
 ```bash
 ./mvnw clean verify -DskipUnitTests=true
 ```
 
-### Running Unit Tests but not Integration Tests:
+## Running Unit Tests but not Integration Tests:
 
 ```bash
 ./mvnw clean verify -DskipITs=true
 ```
 
-### Skip Both Unit and Integration Test
+## Skip Both Unit and Integration Test
 
 ```bash
 ./mvnw clean verify -DskipTests
 ```
 
-## Other Ways
+OR
 
-### Running unit tests only (it uses maven surefire plugin)
+```bash
+./mvnw clean verify -Dmaven.test.skip=true
+```
+
+# Other Ways
+
+## Running unit tests only (it uses maven surefire plugin)
 
 ```bash
 ./mvnw  compiler:testCompile resources:testResources  surefire:test
 ```
 
-### Running integration tests only (it uses maven-failsafe-plugin)
+## Running integration tests only (it uses maven-failsafe-plugin)
 
 ```bash
 ./mvnw  compiler:testCompile resources:testResources  failsafe:integration-test
 ```
 
-### Maven Plugins Docs
+## Maven Plugins Docs
 
 * [Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/test-mojo.html#includes)
 * [Maven Failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/integration-test-mojo.html#includes)
 
-### Reference Documentation
+## Reference Documentation
 
 For further reference, please consider the following sections:
 
@@ -88,7 +94,7 @@ For further reference, please consider the following sections:
 * [Validation](https://docs.spring.io/spring-boot//io/validation.html)
 * [Flyway Migration](https://docs.spring.io/spring-boot/how-to/data-initialization.html#howto.data-initialization.migration-tool.flyway)
 
-### Guides
+## Guides
 
 The following guides illustrate how to use some features concretely:
 

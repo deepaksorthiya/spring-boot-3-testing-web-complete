@@ -2,12 +2,12 @@ package com.example;
 
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.TestPropertySource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest
-class GreetingService2Tests {
+@TestPropertySource(properties = {"spring.profiles.active=test"})
+class GreetingService2Tests extends AbstractBaseTest {
 
     @Autowired
     private GreetingService greetingService;
@@ -35,7 +35,7 @@ class GreetingService2Tests {
     void testGreet() {
         //when(greetingRepo.greet()).thenReturn("Hello, World");
         //assertEquals("Hello, World", greetingService.greet());
-        assertEquals("Hello World From Test", greetingService.greet());
+        assertEquals("test message", greetingService.greet());
         //verify(greetingRepo, times(1)).greet();
     }
 

@@ -3,13 +3,11 @@ package com.example;
 import org.junit.jupiter.api.*;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
-@SpringBootTest
-class GreetingServiceTests {
+class GreetingServiceTests extends AbstractBaseTest {
 
     @InjectMocks
     private GreetingService greetingService;
