@@ -12,9 +12,9 @@
 
 ```
 Git: 2.49.0
-Spring Boot: 3.4.5
+Spring Boot: 3.5.6
 Maven: 3.9+
-Java: 21
+Java: 24
 ```
 
 ## Clone Github Repository
