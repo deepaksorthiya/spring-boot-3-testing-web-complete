@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBoot3TestingWebCompleteApplication {
+public class SpringBootTestingWebCompleteApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBoot3TestingWebCompleteApplication.class, args);
+		SpringApplication.run(SpringBootTestingWebCompleteApplication.class, args);
 	}
 
 }

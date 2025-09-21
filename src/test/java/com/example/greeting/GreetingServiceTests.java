@@ -1,5 +1,6 @@
-package com.example;
+package com.example.greeting;
 
+import com.example.AbstractBaseTest;
 import org.junit.jupiter.api.*;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -7,6 +8,10 @@ import org.mockito.Mock;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
+/**
+ * Service Layer Unit Testing Using Mockito and Spring Boot Application Context @see {@link AbstractBaseTest}
+ * Here Mock Object will be replaced amd injected in app context at runtime
+ */
 class GreetingServiceTests extends AbstractBaseTest {
 
     @InjectMocks
@@ -32,9 +37,10 @@ class GreetingServiceTests extends AbstractBaseTest {
     }
 
     @Test
-    void testGreet() {
-        when(greetingRepo.greet()).thenReturn("Hello, World");
-        assertEquals("Hello, World", greetingService.greet());
+    void greeting_should_return_greet_message() {
+        when(greetingRepo.greet()).thenReturn("Hello, Greeting World");
+        String greet = greetingService.greet();
+        assertEquals("Hello, Greeting World", greet);
         verify(greetingRepo, times(1)).greet();
     }
 

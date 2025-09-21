@@ -1,5 +1,6 @@
-package com.example;
+package com.example.greeting;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,8 +15,9 @@ public class GreetingController {
     }
 
     @RequestMapping("/greeting")
-    public String greeting() {
-        return service.greet();
+    public ResponseEntity<String> greeting() {
+        String greet = service.greet();
+        return ResponseEntity.ok(greet);
     }
 
 }

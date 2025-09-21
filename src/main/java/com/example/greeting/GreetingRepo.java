@@ -1,4 +1,4 @@
-package com.example;
+package com.example.greeting;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.bind.DefaultValue;
