@@ -1,4 +1,4 @@
-[![Java Maven Build Test](https://github.com/deepaksorthiya/spring-boot-3-testing-web-complete/actions/workflows/maven-build.yml/badge.svg)](https://github.com/deepaksorthiya/spring-boot-3-testing-web-complete/actions/workflows/maven-build.yml)
+[![Java Maven Build Test](https://github.com/deepaksorthiya/spring-boot-testing-web-complete/actions/workflows/maven-build.yml/badge.svg)](https://github.com/deepaksorthiya/spring-boot-testing-web-complete/actions/workflows/maven-build.yml)
 
 ---
 
@@ -11,7 +11,7 @@
 ## Requirements:
 
 ```
-Git: 2.49.0
+Git: 2.51.0
 Spring Boot: 3.5.6
 Maven: 3.9+
 Java: 24
@@ -20,8 +20,8 @@ Java: 24
 ## Clone Github Repository
 
 ```bash
-git clone https://github.com/deepaksorthiya/spring-boot-3-testing-web-complete
-cd spring-boot-3-testing-web-complete
+git clone https://github.com/deepaksorthiya/spring-boot-testing-web-complete
+cd spring-boot-testing-web-complete
 ```
 
 # Run Tests
