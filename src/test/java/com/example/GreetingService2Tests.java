@@ -12,9 +12,6 @@ class GreetingService2Tests extends AbstractBaseTest {
     @Autowired
     private GreetingService greetingService;
 
-    //@MockitoBean
-    //private GreetingRepo greetingRepo;
-
     @BeforeAll
     static void setUpBeforeClass() throws Exception {
     }
@@ -33,10 +30,8 @@ class GreetingService2Tests extends AbstractBaseTest {
 
     @Test
     void testGreet() {
-        //when(greetingRepo.greet()).thenReturn("Hello, World");
-        //assertEquals("Hello, World", greetingService.greet());
-        assertEquals("test message", greetingService.greet());
-        //verify(greetingRepo, times(1)).greet();
+        String greet = greetingService.greet();
+        assertEquals("test message", greet);
     }
 
 }

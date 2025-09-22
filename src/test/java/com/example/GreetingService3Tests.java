@@ -1,18 +1,20 @@
 package com.example;
 
 import org.junit.jupiter.api.*;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.TestPropertySource;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
-class GreetingServiceTests extends AbstractBaseTest {
+@TestPropertySource(properties = {"spring.profiles.active=test"})
+class GreetingService3Tests extends AbstractBaseTest {
 
-    @InjectMocks
+    @Autowired
     private GreetingService greetingService;
 
-    @Mock
+    @MockitoBean
     private GreetingRepo greetingRepo;
 
     @BeforeAll

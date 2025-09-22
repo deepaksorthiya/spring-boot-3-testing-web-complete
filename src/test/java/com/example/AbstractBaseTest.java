@@ -3,5 +3,5 @@ package com.example;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class AbstractBaseTest {
+public abstract class AbstractBaseTest {
 }
